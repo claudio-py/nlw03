@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lar das meninas | Happy</title>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+  <link rel="icon" href="/images/logo-icon.png">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/animation.css">
+  <link rel="stylesheet" href="/css/sidebar.css"> 
+  <link rel="stylesheet" href="/css/map.css"> 
+		<link rel="stylesheet" href="/css/buttons.css" />
+  <link rel="stylesheet" href="/css/page-orphanage.css">
+
+</head>
+<body>
+ <div id="page-orphanage">
+  <aside class="animate-right sidebar">
+    <img src="/images/map-marker.svg" alt="happy">
+    <footer>
+      <button onclick="history.back()">
+        <img src="/images/arrow-back.svg" alt="voltar">
+      </button>
+    </footer>
+  </aside>
+  <main class="animate-appear with-sidebar">
+    <div class="orphanage-details">
+      <img src="https://picsum.photos/id/231/800" alt="Lar das meninas">
+      <div class="images">
+        <button onclick="selectImage(event)" class="active" type="button">
+          <img src="https://picsum.photos/id/232/800" alt="lar das meninas">
+        </button>
+        <button onclick="selectImage(event)"  type="button">
+          <img src="https://picsum.photos/id/233/800" alt="lar das meninas">
+        </button>
+        <button onclick="selectImage(event)"  type="button">
+          <img src="https://picsum.photos/id/234/800" alt="lar das meninas">
+        </button>
+        <button  onclick="selectImage(event)" type="button">
+          <img src="https://picsum.photos/id/235/800" alt="lar das meninas">
+        </button>
+        <button onclick="selectImage(event)"  type="button">
+          <img src="https://picsum.photos/id/236/800" alt="lar das meninas">
+        </button>
+        <button onclick="selectImage(event)"  type="button">
+          <img src="https://picsum.photos/id/237/800" alt="lar das meninas">
+        </button>
+      </div>
+
+      <div class="orphanage-details-content">
+        <h1>Lar das meninas</h1>
+        <p>
+          Presta assistencia a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.
+        </p>
+        <div class="map-container">
+          <div id="mapid"></div>
+             <footer>
+          <a href="#">Ver roas no Google Maps</a>
+        </footer>
+        </div>
+<hr>
+<h2>Instruções para visitas</h2>
+<p>Venha como se sentir a vonade e traga muito amor e paciencia para dar</p>
+<div class="open-details">
+  <div class="hour">
+    <img src="/images/clock.svg" alt="Horários">
+    Horário de visítas das 8h às 19h
+  </div>
+  <div class="open-on-weekends">
+    <img src="/images/info.svg" alt="informações">
+    Atendemos aos fins de semana
+  </div>
+</div>
+<button type="button" class="primary-button">
+  <img src="/images/whatsapp.svg" alt="whatsapp">
+  Entrar em contato
+</button>
+      </div>
+    </div>
+  </main>
+ </div>
+ <script src="/scripts/page-orphanage.js"></script>
+</body>
+</html>
